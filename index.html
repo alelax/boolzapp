@@ -36,7 +36,7 @@
 					<label class="search-label" for="search">
 						<i class="fa fa-search" aria-hidden="true"></i>
 					</label>
-					<input class="left-searchbar-input" placeholder="Cerca o inizia una nuova chat" name="search">
+					<input id="contacts-filter" class="left-searchbar-input" placeholder="Cerca o inizia una nuova chat" name="search">
 				</div>
 				<div class="contacts">
 					<div class="contact active">
@@ -44,7 +44,7 @@
 							<img src="https://img.kpopmap.com/2017/11/kim-kookheon.jpg" alt="">
 						</div>
 						<div class="contact-info">
-							<h3>Friend 1 <span class="f-right">17.53</span></h3>
+							<h3><span class="contact-name">Michele</span> <span class="f-right">17.53</span></h3>
 							<small>Non poteva essere altrimenti</small>
 						</div>
 					</div>
@@ -53,7 +53,7 @@
 							<img src="https://img.kpopmap.com/2017/11/kim-kookheon.jpg" alt="">
 						</div>
 						<div class="contact-info">
-							<h3>Friend 1 <span class="f-right">17.53</span></h3>
+							<h3><span class="contact-name">Fabio</span> <span class="f-right">17.53</span></h3>
 							<small>Non poteva essere altrimenti</small>
 						</div>
 					</div>
@@ -62,7 +62,7 @@
 							<img src="https://img.kpopmap.com/2017/11/kim-kookheon.jpg" alt="">
 						</div>
 						<div class="contact-info">
-							<h3>Friend 1 <span class="f-right">17.53</span></h3>
+							<h3><span class="contact-name">Samuele</span> <span class="f-right">17.53</span></h3>
 							<small>Non poteva essere altrimenti</small>
 						</div>
 					</div>
@@ -71,7 +71,7 @@
 							<img src="https://img.kpopmap.com/2017/11/kim-kookheon.jpg" alt="">
 						</div>
 						<div class="contact-info">
-							<h3>Friend 1 <span class="f-right">17.53</span></h3>
+							<h3><span class="contact-name">Alessandro B.</span> <span class="f-right">17.53</span></h3>
 							<small>Non poteva essere altrimenti</small>
 						</div>
 					</div>
@@ -80,7 +80,7 @@
 							<img src="https://img.kpopmap.com/2017/11/kim-kookheon.jpg" alt="">
 						</div>
 						<div class="contact-info">
-							<h3>Friend 1 <span class="f-right">17.53</span></h3>
+							<h3><span class="contact-name">Alessandro L.</span> <span class="f-right">17.53</span></h3>
 							<small>Non poteva essere altrimenti</small>
 						</div>
 					</div>
@@ -89,7 +89,7 @@
 							<img src="https://img.kpopmap.com/2017/11/kim-kookheon.jpg" alt="">
 						</div>
 						<div class="contact-info">
-							<h3>Friend 1 <span class="f-right">17.53</span></h3>
+							<h3><span class="contact-name">Loana</span> <span class="f-right">17.53</span></h3>
 							<small>Non poteva essere altrimenti</small>
 						</div>
 					</div>
@@ -98,7 +98,7 @@
 							<img src="https://img.kpopmap.com/2017/11/kim-kookheon.jpg" alt="">
 						</div>
 						<div class="contact-info">
-							<h3>Friend 1 <span class="f-right">17.53</span></h3>
+							<h3><span class="contact-name">Davide</span> <span class="f-right">17.53</span></h3>
 							<small>Non poteva essere altrimenti</small>
 						</div>
 					</div>
@@ -107,34 +107,7 @@
 							<img src="https://img.kpopmap.com/2017/11/kim-kookheon.jpg" alt="">
 						</div>
 						<div class="contact-info">
-							<h3>Friend 1 <span class="f-right">17:53</span></h3>
-							<small>Non poteva essere altrimenti</small>
-						</div>
-					</div>
-					<div class="contact">
-						<div class="contact-logo">
-							<img src="https://img.kpopmap.com/2017/11/kim-kookheon.jpg" alt="">
-						</div>
-						<div class="contact-info">
-							<h3>Friend 1 <span class="f-right">17:53</span></h3>
-							<small>Non poteva essere altrimenti</small>
-						</div>
-					</div>
-					<div class="contact">
-						<div class="contact-logo">
-							<img src="https://img.kpopmap.com/2017/11/kim-kookheon.jpg" alt="">
-						</div>
-						<div class="contact-info">
-							<h3>Friend 1 <span class="f-right">17:53</span></h3>
-							<small>Non poteva essere altrimenti</small>
-						</div>
-					</div>
-					<div class="contact">
-						<div class="contact-logo">
-							<img src="https://img.kpopmap.com/2017/11/kim-kookheon.jpg" alt="">
-						</div>
-						<div class="contact-info">
-							<h3>Friend 1 <span class="f-right">17:53</span></h3>
+							<h3><span class="contact-name">Federico</span> <span class="f-right">17:53</span></h3>
 							<small>Non poteva essere altrimenti</small>
 						</div>
 					</div>
@@ -155,27 +128,13 @@
 				<div class="right-messages">
 					<div class="message received">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <span class="message-time">17.31</span></div>
 					<div class="cl-t"></div>
-					<div class="message received">Lorem ipsum dolor sit amet, consectetur adipisicing elit, <span class="message-time">17.31</span></div>
+					<div class="message received">A dopo <span class="message-time">17.31</span></div>
 					<div class="cl-t"></div>
 					<div class="message sent">A Ok, grazie <span class="message-time">17.36</span></div>
 					<div class="cl-t"></div>
 					<div class="message sent">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <span class="message-time">17.46</span></div>
 					<div class="cl-t"></div>
-					<div class="message received">Lorem ipsum dolor sit amet, consectetur adipisicing elit, <span class="message-time">17.31</span></div>
-					<div class="cl-t"></div>
-					<div class="message sent">A Ok, grazie <span class="message-time">17.36</span></div>
-					<div class="cl-t"></div>
-					<div class="message sent">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <span class="message-time">17.46</span></div>
-					<div class="cl-t"></div>
-					<div class="message received">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. <span class="message-time">17.31</span></div>
-					<div class="cl-t"></div>
-					<div class="message received">Lorem ipsum dolor sit amet, consectetur adipisicing elit, <span class="message-time">17.31</span></div>
-					<div class="cl-t"></div>
-					<div class="message sent">A Ok, grazie <span class="message-time">17.36</span></div>
-					<div class="cl-t"></div>
-					<div class="message sent">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <span class="message-time">17.46</span></div>
-					<div class="cl-t"></div>
-					<div class="message received">Lorem ipsum dolor sit amet, consectetur adipisicing elit, <span class="message-time">17.31</span></div>
+					<div class="message received">A dopo <span class="message-time">17.31</span></div>
 					<div class="cl-t"></div>
 					<div class="message sent">A Ok, grazie <span class="message-time">17.36</span></div>
 					<div class="cl-t"></div>
