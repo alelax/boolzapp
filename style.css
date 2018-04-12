@@ -127,6 +127,7 @@ header {
 	float: right;
 	height: 36px;
 	margin: 7px 7px 7px 0;
+	padding: 0 10px;
 	border-left: 0;
 	border-top: 1px solid #F5F5F5;
 	border-right: 1px solid #F5F5F5;
@@ -189,7 +190,7 @@ header {
 	font-size: 17px;
 	font-weight: normal;
 }
-.left .contacts .contact .contact-info span {
+.left .contacts .contact .contact-info span.f-right {
 	color: #B6B9BB;
 	font-size: 12px;
 	font-weight: lighter;
